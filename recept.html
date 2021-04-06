@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+
+<head>
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Laat jouw recept achter en wij plaatsen hem op onze website!</h1>
+        <p>Vul de velden hieronder in en verstuur het formulier. Wij laten je weten wanneer jouw recept op onze website
+            is
+            geplaatst.</p>
+    </header>
+    <main>
+        <form class="border" name="contact" data-netlify="true">
+            <input type="text" name="naam" placeholder="Naam">
+            <input type="email" name="email" placeholder="E-mailadres">
+            <input type="tel" name="telefoonnummer" minlength="1" maxlength="10" placeholder="Telefoonnummer">
+            <input type="number" name="leeftijd" min="1" max="100" placeholder="Leeftijd">
+            <label>Geboortedatum: <input type="date" name="geboortedatum"></label><br>
+            <label>Geslacht: <br>
+                <input class="inline" type="radio" name="geslacht" value="man"><label for="man"> Man</label><br>
+                <input class="inline" type="radio" name="geslacht" value="vrouw"><label for="vrouw"> Vrouw</label><br>
+                <input class="inline" type="radio" name="geslacht" value="overig"><label for="overig"> Anders</label>
+            </label><br><br>
+            <label>Favoriete keuken: <br>
+                <input class="inline" type="checkbox" name="favcuisine1" value="Frans">
+                <label for="favcuisine1"> Frans</label><br>
+                <input class="inline" type="checkbox" name="favcuisine2" value="Italiaans">
+                <label for="favcuisine2"> Italiaans</label><br>
+                <input class="inline" type="checkbox" name="favcuisine3" value="Spaans">
+                <label for="favcuisine3"> Spaans</label><br>
+                <input class="inline" type="checkbox" name="favcuisine4" value="Arabisch">
+                <label for="favcuisine4"> Arabisch</label>
+            </label><br><br>
+            <label for="favcolor">Jouw favoriete keukenshort kleur:</label>
+            <input type="color" name="favcolor"><br>
+            <textarea name="biografie"
+                placeholder="Beschrijf in het kort jouw biografie, zodat de lezers een idee krijgen van de kok"
+                cols="20" rows="10"></textarea><br>
+            <label for="recept">Upload jouw recept hier: </label><input type="file" name="recept"><br>
+            <input type="url" name="website" placeholder="Jouw receptenwebsite"><br>
+            <input type="reset" value="Reset het formulier met deze knop"><br>
+            <input type="submit" value="Verzenden">
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Terug naar de homepagina</a><br><br>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

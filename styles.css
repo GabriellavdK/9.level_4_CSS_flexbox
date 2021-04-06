@@ -1,0 +1,110 @@
+h1,
+h2 {
+    color: coral;
+}
+
+.border {
+    border: 2px dotted grey;
+    padding: 0px 20px 10px;
+    margin: 20px;
+}
+
+body {
+    background-color: cornsilk;
+    color: darkslategray;
+    font-family: 'New Tegomin', serif;
+}
+
+a {
+    color: steelblue;
+}
+
+nav,
+p {
+    font-size: 22px;
+    line-height: 1.5em;
+}
+
+li {
+    font-size: 22px;
+}
+
+form.border {
+    padding: 10px 20px 10px;
+}
+
+input {
+    display: block;
+    margin: 5px 0px;
+}
+
+textarea {
+    display: block;
+}
+
+input.inline {
+    display: inline;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.blogpost {
+    width: 35%;
+    border: 1px solid black;
+    margin: 50px;
+    text-align: center;
+}
+
+#highlight {
+    order: -1;
+    align-self: flex-start;
+    width: 70%;
+    border: none;
+}
+
+.large {
+    width: 35%;
+    border: 1px solid black;
+    margin: 50px;
+    text-align: center;
+    flex-grow: 2;
+}
+
+
+
+/* Media queries */
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #ffeda3;
+        color: black;
+    }
+
+    h1,
+    h2 {
+        color: rgb(255, 86, 24);
+    }
+
+    main.border {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.2em;
+    }
+
+    li {
+        font-size: 18px;
+    }
+
+    form.border {
+        width: 30%;
+        margin: auto;
+    }
+}
